@@ -10,6 +10,8 @@ Claude Code is stateless between sessions. Without structure, you end up re-expl
 
 The vault is a folder that lives alongside (or inside) your projects, or as a standalone Obsidian vault. Claude reads it at the start of each session — but only the parts relevant to the current task.
 
+**Local project files are respected.** If a project has its own `CLAUDE.md` or `AGENTS.md`, Claude reads it before doing any work in that project. Local files take authority over project-specific concerns (dev commands, build, lint, file structure); vault preferences apply as defaults where the local file is silent. If a local file explicitly overrides a vault preference, the local file wins — Claude flags the conflict once at session start, then follows it silently.
+
 ```
 vault/
   CLAUDE.md             ← entry point: tells Claude what to load and when
