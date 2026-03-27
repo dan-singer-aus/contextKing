@@ -21,3 +21,7 @@ contextKing is a **system** — a set of conventions, file structures, and workf
 - Describe what changed and why
 - Note which version of Claude Code you tested with
 - Keep changes focused — one structural concern per PR
+
+## A note on response times
+
+This is a personal project maintained in my spare time. Response to issues and PRs may be slow — I'll get to them when I can.
